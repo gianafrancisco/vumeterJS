@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>js-vumeter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="kinetic-v3.9.4.js"></script>
+        <script src="vumeter-lib.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body onload="Init();" style="background: #ffffff;">
+        <table>
+            <tbody>
+                <tr>
+                    <td><div id="uvmeter"></div></td>
+                    <td><div id="uvmeter2"></div></td>
+                    <td><div id="uvmeter3"></div></td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="5" id="linear" value="0"><button onClick="uvmeter.setValue(document.getElementById('linear').value);">set value</button></td>
+                    <td><input type="text" size="5" id="logarithmic" value="0"><button onClick="uvmeter2.setValue(document.getElementById('logarithmic').value);">set value</button></td>
+                    <td><input type="text" size="5" id="quadratic" value="0"><button onClick="uvmeter3.setValue(document.getElementById('quadratic').value);">set value</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
